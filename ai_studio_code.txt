@@ -1,0 +1,29 @@
+In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s
+<button>
+button
+
+
+  <App>
+    <div className="flex h-scr...">
+      <AnimatePresence mode="wait">
+        <PresenceChild isPresent={true} initial={undefined} custom={undefined} presenceAffectsLayout={true} mode="wait" ...>
+          <PopChild pop={false} isPresent={true} anchorX="left" anchorY="top" root={undefined}>
+            <PopChildMeasure isPresent={true} childRef={{current:null}} sizeRef={{...}} pop={false}>
+              <motion.aside initial={{x:-300,opacity:0}} animate={{x:0,opacity:1}} exit={{x:-300,opacity:0}} ...>
+                <aside className="w-72 bg-wh..." style={{opacity:0, ...}} ref={function}>
+                  <div>
+                  <div>
+                  <div className="flex-1 ove...">
+                    <div>
+>                   <button
+>                     onClick={function onClick}
+>                     className="w-full text-left p-3 rounded-xl transition-all group relative bg-[#5A5A40]/5 text-[#5..."
+>                   >
+                      <div>
+                      <div>
+>                     <button
+>                       onClick={function onClick}
+>                       className="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transit..."
+>                     >
+      ...
